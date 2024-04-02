@@ -8,8 +8,7 @@ const getDate = () => {
     let month = ('0' + (infoDate.getMonth() + 1)).slice(-2);
     let year = infoDate.getFullYear();
     let time = infoDate.toLocaleTimeString();
-    let arr = time.split(':').map(element => parseInt(element))
-    console.log(arr)
+    fraseHora(time)
     date.innerHTML = `${day}/${month}/${year}`;
     clock.innerHTML = time
     
@@ -19,10 +18,9 @@ const changeBackground = () => {
     url = `url('./img/img${random}.avif')`
     document.body.style.backgroundImage = url
     }
-const fraseHora = () => {
-    let arr = time.split(':')
-    let arr2 = arr.map(element => parseInt(element))
-    console.log(arr2)
+const fraseHora = (hora) => {
+    let arr = hora.split(':').map(element => parseInt(element))
+    if((arr[0] === 0 && arr[1] > 0)||( 0 <= arr[0] < 7)||arr[0] === 7 && arr[1] === 0)
 }
 /*setInterval(() => {
     getDate()
