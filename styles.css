@@ -2,3 +2,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+#link-list {
+    background-color: rgba(69, 16, 62, 0.5);
+}
+button {
+    margin-left: 20px;
+
+
+}
+li{
+    display: flex;
+    margin: 3px;
+}
+ul {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}

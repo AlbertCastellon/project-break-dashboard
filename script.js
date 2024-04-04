@@ -23,17 +23,17 @@ const fraseHora = (hora) => {
     arr.pop()
     let horaDec = parseInt(arr.join('.'))
     
-    if(0 < horaDec <= 7){
+    if(0 < horaDec && horaDec <= 7){
         frase = 'Es hora de descansar. Apaga y sigue mañana'
-    }else if(7 < horaDec <= 12){
+    }else if(7 < horaDec && horaDec <= 12){
         frase = 'Buenos días, desayuna fuerte y a darle al código'
-    }else if(12 < horaDec <= 14){
+    }else if(12 < horaDec && horaDec <= 14){
         frase = 'Echa un rato más pero no olvides comer'
-    }else if(14 < horaDec <= 16){
+    }else if(14 < horaDec && horaDec <= 16){
         frase = 'Espero que hayas comido'
-    }else if(16 < horaDec <= 18){
+    }else if(16 < horaDec && horaDec <= 18){
         frase = 'Buenas tardes, el último empujón'
-    }else if(18 < horaDec <= 22){
+    }else if(18 < horaDec && horaDec <= 22){
         frase = 'Esto ya son horas extras, ... piensa en parar pronto'
     }else if(horaDec > 22 || horaDec === 0){
         frase = 'Buenas noches, es hora de pensar en parar y descansar'
