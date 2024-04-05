@@ -21,8 +21,7 @@ const changeBackground = () => {
 const fraseHora = (hora) => {
     let arr = hora.split(':')
     arr.pop()
-    let horaDec = parseInt(arr.join('.'))
-    
+    let horaDec = parseFloat(arr.join('.'))
     if(0 < horaDec && horaDec <= 7){
         frase = 'Es hora de descansar. Apaga y sigue mañana'
     }else if(7 < horaDec && horaDec <= 12){
