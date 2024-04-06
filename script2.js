@@ -30,6 +30,11 @@ const render = () => {
 linkBtn.addEventListener('click', () => {
     if(!linkName.value || !link.value){
         return
+    }else if (!URL.canParse(link.value)){
+        alert('El link introducido no es valido')
+        linkName.value = ''
+        link.value = ''
+        return
     }
     const li = document.createElement('li')
     const a = document.createElement('a')
@@ -55,3 +60,11 @@ linkBtn.addEventListener('click', () => {
 })
 render()
 
+/*function isUrlValid(string) {
+  try {
+    new URL(string);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}*/
