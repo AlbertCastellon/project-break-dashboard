@@ -1,6 +1,6 @@
 const date = document.querySelector('.date')
 const clock = document.querySelector('.clock')
-const weather = document.querySelector('.weather')
+
 const body = document.querySelector('body')
 const getDate = () => {
     let infoDate = new Date();

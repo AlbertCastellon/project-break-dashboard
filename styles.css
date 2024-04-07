@@ -1,6 +1,7 @@
 body {
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: sans-serif;
 }
 #link-list {
     background-color: rgba(69, 16, 62, 0.5);
@@ -18,4 +19,40 @@ ul {
     width: 15%;
     display: flex;
     flex-direction: column;
+}
+.prevision {
+    display: flex;
+    background-color: rgba(0, 0, 128, 0.5);
+    color: white;
+    justify-content: space-around;
+}
+.prevision div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.weather-today {
+    display: flex;
+    background-color: rgba(72, 209, 204, 0.7);
+}
+.weather-today ul {
+    font-size: 14px;
+}
+.weather-today  img{
+    height: 100px;
+}
+a {
+    color: azure;
+}
+#resultado-password {
+    background-color: rgba(0, 255, 255, 0.5);
+    font-weight: 600;
+    display: inline;
+    box-sizing: border-box;
+    margin-top: 150px;
+    padding: 5px;
+}
+.weather-today p {
+    font-size: 30px;
 }
