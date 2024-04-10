@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    margin: 3em;
+}
+.links {
+    align-items: center;
+    background-color: rgba(69, 16, 62, 0.5);
+}
+.password {
+    background-color: rgba(69, 16, 62, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 1550px){
+    .prevision{
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+    }
+}

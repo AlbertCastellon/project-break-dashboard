@@ -10,6 +10,9 @@ crearBtn.addEventListener('click', () => {
     
     if(!numCaracteres.value){
         numCaracteres.value = 12
+    }else if (!parseInt(numCaracteres.value)){
+        alert('Introduce un número')
+        return
     }
     let password = []
     let a 

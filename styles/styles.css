@@ -1,0 +1,130 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    color: rgb(127, 255, 212);;
+}
+header {
+    background-color: rgb(69, 16, 62);
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+}
+header a {
+    color: aquamarine;
+    padding: 0.5em;
+    border: 1px solid rgb(127, 255, 212);
+    margin: 0.5em;
+    border-radius: 0.3em;
+}
+header a:hover {
+    color: rgb(69, 16, 62);
+    background-color: rgb(127, 255, 212);
+}
+main {
+    margin-top:  3.3em;
+    display: flex;
+    flex-direction: column;
+}
+.links {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+#link-list {
+    border: 1px solid rgb(127, 255, 212);
+    border-radius: 0.3em;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  
+}
+button {
+    margin-left: 20px;
+    align-self: flex-end;
+
+}
+.weather{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.time {
+    margin-left: 5em;
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+li{
+    display: flex;
+    margin: 3px;
+}
+ul {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.prevision {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.prevision div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.weather-today {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5em;
+    margin-top: 2.5em;
+}
+.weather-today ul {
+    font-size: 14px;
+}
+.weather-today  img{
+    height: 100px;
+}
+a {
+    color: azure;
+}
+#resultado-password {
+    
+    font-weight: 600;
+    padding: 10px;
+}
+.weather-today p {
+    font-size: 30px;
+}
+section {
+    background-color: rgba(69, 16, 62, 0.5);
+}
+.password {
+    padding: 2em;
+    background: none;
+    width: 400px;
+}
+#password-link {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: rgba(69, 16, 62, 0.5)
+}
+@media (max-width: 1550px){
+    .prevision{
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+    }
+}

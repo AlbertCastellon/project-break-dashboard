@@ -13,11 +13,7 @@ const getDate = () => {
     clock.innerHTML = time+ ' ' + frase
     
 }
-const changeBackground = () => {
-    let random = Math.floor(Math.random() * 10)
-    url = `url('./img/img${random}.avif')`
-    document.body.style.backgroundImage = url
-    }
+
 const fraseHora = (hora) => {
     let arr = hora.split(':')
     arr.pop()
@@ -39,10 +35,7 @@ const fraseHora = (hora) => {
     }
     return frase
 }
-changeBackground()
+
 setInterval(() => {
     getDate()
 }, 1000)
-setInterval(() => {
-    changeBackground()
-}, 15000)

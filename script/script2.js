@@ -2,7 +2,7 @@ const linkBtn = document.getElementById('link-button');
 const linkName = document.getElementById('name');
 const link = document.getElementById('link');
 const list = document.getElementById('link-list')
-
+let entrada
 
 let links = {}
 const render = () => {
@@ -36,6 +36,10 @@ linkBtn.addEventListener('click', () => {
         link.value = ''
         return
     }
+    if(linkName.value.length > 20) {
+        linkName.value = linkName.value.slice(17) + '...';
+    }
+    entrada = linkName.value
     const li = document.createElement('li')
     const a = document.createElement('a')
     const delBtn = document.createElement('button')
@@ -50,7 +54,7 @@ linkBtn.addEventListener('click', () => {
     localStorage.setItem('links', JSON.stringify(links))
 
     delBtn.addEventListener('click', () => {
-        delete links[linkName.value]
+        delete links[entrada]
         localStorage.setItem('links', JSON.stringify(links))
         li.remove()
 

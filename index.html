@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <section class="weather-station">
-        <article class="time">
-            <p class="date"></p>
-            <p class="clock"></p>
-        </article>
-        <article class="weather">
-            <div class="weather-today"></div>
-        </article>
-    </section>
-    <section class="links">
-        <form action="">
-            <label for="name">Nombre del link</label>
-            <input type="text" id="name">
-            <label for="link">Link</label>
-            <input type="text" id="link">
-            <input type="button" id="link-button" value="Guardar">
-        </form>
-        <ul id="link-list">
-        </ul>
-    </section>
-    <section class="password">
-        <form action="">
-            <input type="number" min="12" max="50" placeholder="12" id="num-caracteres">
-            <input type="button" id="crear-password" value="Crear">
-        </form>
-        <p id="resultado-password"></p>
-    </section>
-    <script src="script.js"></script>
-    <script src="script2.js"></script>
-    <script src="script3.js"></script>
-    <script src="script4.js"></script>
+    <header>
+        <a href="clock.html">Reloj</i></a>
+        <a href="weather.html">Metorologia</i></a>
+        <a href="links.html">Links</a>
+        <a href="password.html">Generador de contraseñas</a>
+    </header>
+    <main>
+        <section class="weather-station">
+            <article class="weather">
+                <article class="time">
+                    <p class="date"></p>
+                    <p class="clock"></p>
+                </article>
+                <div class="weather-today"></div>
+            </article>
+        </section>
+        <div id="password-link">
+            <section class="links">
+                <h2>Guarda tus Links</h2>
+                <form action="">
+                    <label for="name">Nombre del link</label>
+                    <input type="text" id="name">
+                    <label for="link">Link</label>
+                    <input type="text" id="link">
+                    <input type="button" id="link-button" value="Guardar">
+                </form>
+                <ul id="link-list">
+                </ul>
+            </section>
+            <section class="password">
+                <h2>Generador de Contraseñas</h2>
+                <form action="">
+                    <input type="number" min="12" max="50" placeholder="12" id="num-caracteres">
+                    <input type="button" id="crear-password" value="Crear">
+                </form>
+                <p id="resultado-password"></p>
+            </section>
+        </div>
+        <script src="./script/script0.js"></script>
+        <script src="./script/script1.js"></script>
+        <script src="./script/script2.js"></script>
+        <script src="./script/script3.js"></script>
+        <script src="./script/script4.js"></script>
+    </main>
 </body>
 </html>
