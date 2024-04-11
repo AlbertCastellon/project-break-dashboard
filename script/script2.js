@@ -54,7 +54,7 @@ linkBtn.addEventListener('click', () => {
     localStorage.setItem('links', JSON.stringify(links))
 
     delBtn.addEventListener('click', () => {
-        delete links[entrada]
+        delete links[a.innerHTML]
         localStorage.setItem('links', JSON.stringify(links))
         li.remove()
 

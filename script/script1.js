@@ -1,6 +1,6 @@
 const date = document.querySelector('.date')
 const clock = document.querySelector('.clock')
-
+const week = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
 const body = document.querySelector('body')
 const getDate = () => {
     let infoDate = new Date();
@@ -9,7 +9,8 @@ const getDate = () => {
     let year = infoDate.getFullYear();
     let time = infoDate.toLocaleTimeString();
     let frase = fraseHora(time)
-    date.innerHTML = `${day}/${month}/${year}`;
+    let dayWeek = week[infoDate.getDay()]
+    date.innerHTML = `${day}/${month}/${year} - ${dayWeek}`;
     clock.innerHTML = time+ ' ' + frase
     
 }

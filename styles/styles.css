@@ -128,3 +128,8 @@ section {
         overscroll-behavior-x: contain;
     }
 }
+@media (max-width: 1000px){
+    #password-link {
+        flex-direction: column;
+    }
+}
