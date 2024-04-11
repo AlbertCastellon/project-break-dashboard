@@ -12,12 +12,12 @@ const render = () => {
         const a = document.createElement('a')
         const delBtn = document.createElement('button')
         delBtn.innerHTML = 'Eliminar'
-        a.href = links.enlace
+        a.href = links[enlace]
         a.target = 'blank'
         a.innerHTML = enlace
         li.append(a, delBtn)
         list.appendChild(li)
-
+        console.log(links[enlace])
         delBtn.addEventListener('click', () => {
             delete links[enlace]
             localStorage.setItem('links', JSON.stringify(links))
