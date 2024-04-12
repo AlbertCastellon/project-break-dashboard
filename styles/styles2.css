@@ -4,6 +4,11 @@ main {
     justify-content: center;
     align-items: center;
 }
+section {
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    box-shadow: rgba(69, 16, 62) 0 0 5px 3px;
+}
 
 .time {
     margin: 3em;

@@ -50,7 +50,16 @@ main {
 button {
     margin-left: 20px;
     align-self: flex-end;
+    background-color:rgb(127, 255, 212);
+    color: rgb(69, 16, 62);
+    border: rgb(69, 16, 62) 1px solid;
+    border-radius: 3px;
 
+}
+button:hover {
+    background-color:rgb(69, 16, 62);
+    color: rgb(127, 255, 212);
+    border: rgb(127, 255, 212) 1px solid;
 }
 .weather{
     display: flex;
@@ -121,6 +130,20 @@ section {
     justify-content: space-around;
 
     background-color: rgba(69, 16, 62, 0.5)
+}
+.btn{
+    background-color:rgb(127, 255, 212);
+    color: rgb(69, 16, 62);
+    border: rgb(69, 16, 62) 1px solid;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.btn:hover {
+    background-color:rgb(69, 16, 62);
+    color: rgb(127, 255, 212);
+    border: rgb(127, 255, 212) 1px solid;
+    transform: scale(1.2);
+    transition: all linear .2s;
 }
 @media (max-width: 1550px){
     .prevision{

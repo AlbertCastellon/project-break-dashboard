@@ -17,7 +17,6 @@ const render = () => {
         a.innerHTML = enlace
         li.append(a, delBtn)
         list.appendChild(li)
-        console.log(links[enlace])
         delBtn.addEventListener('click', () => {
             delete links[enlace]
             localStorage.setItem('links', JSON.stringify(links))
